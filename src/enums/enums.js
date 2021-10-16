@@ -17,7 +17,7 @@ export const mainMenu = [
   },
   {
     title: "CONTACTO",
-    url: "/",
+    url: "#contact",
   },
 ];
 

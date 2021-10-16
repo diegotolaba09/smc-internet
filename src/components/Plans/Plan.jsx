@@ -4,18 +4,12 @@ import Grid from "@mui/material/Grid";
 import { Item, planStyles } from "./styles.css";
 import { useHover } from "../../funtions/Hooks";
 
-export default function Plan({ plan, index }) {
+export default function Plan({ plan }) {
   const [hoverRef, isHovered] = useHover();
   const classes = planStyles();
 
   return (
-    <Grid
-      item
-      md={4}
-      key={index}
-      classes={{ root: classes.itemGrid }}
-      ref={hoverRef}
-    >
+    <Grid item md={4} classes={{ root: classes.itemGrid }} ref={hoverRef}>
       <Item>
         <Typography
           variant="h3"

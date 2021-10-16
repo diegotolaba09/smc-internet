@@ -26,7 +26,7 @@ export default function Plans() {
           classes={{ root: classes.containerGrid }}
         >
           {plans.map((plan, index) => (
-            <Plan plan={plan} index={index} />
+            <Plan plan={plan} key={index} />
           ))}
         </Grid>
       </Container>

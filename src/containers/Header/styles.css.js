@@ -4,6 +4,9 @@ export const headerStyles = makeStyles(({ spacing, shadows, palette }) => ({
   header: {
     backgroundColor: palette.common.white,
     boxShadow: shadows[3],
+    position: "sticky",
+    top: 0,
+    zIndex: 3,
   },
   containerHeader: {
     display: "flex !important",
